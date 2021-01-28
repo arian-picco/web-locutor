@@ -1,0 +1,237 @@
+.header-container {
+  display: flex;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  font-size: 25px;
+  color: black;
+  display: block;
+  justify-content: center;
+  align-self: center;
+  margin: 5%;
+  padding: 3px;
+}
+
+.logo img.cel-logo {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  margin: none;
+}
+
+.logo img.full-logo {
+  display: none;
+}
+
+nav {
+  padding: 10px 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-shadow: rgba(black, 0.2);
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Bebas Neue";
+}
+
+nav {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.menu-button-li a {
+  text-decoration: none;
+}
+
+.menu {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 0;
+  display: none;
+}
+
+span {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+span:hover {
+  color: black;
+  text-shadow: 0px 0px 30px #f5f5dd;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.menu-button-a {
+  cursor: pointer;
+}
+
+@media all and (min-width: 600px) {
+  .header-container {
+    padding: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    align-items: flex-end;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    transition: 0.5s;
+    background-image: url(backround4.jpg);
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .header-container.small {
+    height: 80px;
+    box-shadow: 0 0 5px rgba(black, 0.2);
+    align-items: flex-end;
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    width: 100%;
+  }
+
+  .header-container.small .menu li {
+    padding: 0;
+  }
+
+  .header-container.small ~ main .presentation {
+    padding-top: 90px;
+  }
+
+  .header-container.small nav{
+    align-self: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo img.cel-logo {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    border: none;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+  }
+
+  a {
+    color: whitesmoke;
+  }
+}
+
+@media all and (min-width: 900px) {
+  nav {
+    width: fit-content;
+    margin-left: 2rem;
+  }
+
+  .logo img.cel-logo {
+    display: none;
+  }
+
+  .header-container {
+    height: 250px;
+    font-weight: bold;
+    transition: 0.5s;
+    background-image: url(backround4.jpg);
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .header-container.small .menu li {
+    padding: 0;
+  }
+
+  .header-container.small ~ main .presentation {
+    padding-top: 90px;
+  }
+
+  .header-container.small .logo {
+    width: 8rem;
+    height: 4rem;
+    border: none;
+    padding: 2px;
+  }
+
+  .logo {
+    width: 26rem;
+    height: 80%;
+    border-style: none;
+    padding: 15px;
+    transition: 0.5s;
+    opacity: 0.9;
+    display: flex;
+  }
+
+  .logo img.full-logo {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: inline;
+    visibility: visible;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    border: none;
+    width: 38rem;
+    margin-right: 3rem;
+  }
+
+  .menu li {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    border: none;
+  }
+
+  span {
+    color: whitesmoke;
+  }
+
+  .contacto-button {
+    text-align: center;
+    border: none;
+  }
+
+  .sobre-mi-button {
+    text-align: center;
+    border: none;
+  }
+
+  .trabajos-realizados-button {
+    text-align: center;
+    border: none;
+  }
+}

@@ -1,0 +1,12 @@
+.audio {
+  display: none;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+}
+
+@media all and (min-width: 500px) {
+  .audio {
+    display: flex;
+  }
+}

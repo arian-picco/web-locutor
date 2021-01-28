@@ -1,0 +1,269 @@
+.presentation {
+  display: flex;
+  padding: 2rem 1rem 2rem 1rem;
+  flex-flow: column nowrap;
+  background-size: 100%;
+  background-color: #f5f5dd;
+  height: 20rem;
+}
+
+.profile {
+  display: none;
+}
+
+.profile img {
+  margin: 10%;
+  border-radius: 4rem;
+  width: 100%;
+}
+
+.profile-desc-container {
+  display: flex;
+  font-size: x-large;
+  text-align: center;
+}
+
+.profile-content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  font-style: bold;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-family: helvetica;
+}
+
+.profile-content h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
+  font-family: helvetica;
+  display: none;
+}
+
+.profile-content p {
+  font-style: normal;
+  font-weight: lighter;
+  font-family: helvetica;
+  display: none;
+}
+
+.second-title {
+  display: flex;
+  padding: 15px;
+  background-color: #c7ad7f;
+  color: whitesmoke;
+  flex-flow: column wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.6);
+}
+
+.second-title h1 {
+  align-self: center;
+  font-style: helvetica;
+  font-weight: bold;
+}
+
+.second-title h2 {
+  font-family: helvetica;
+  padding-top: 5px;
+  align-self: center;
+}
+
+.second-title p {
+  display: flex;
+  align-self: center;
+}
+
+@media all and (min-width: 550px) {
+  .presentation {
+    display: flex;
+    padding: 10px 20px 0px 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .profile {
+    padding: 2rem;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    display: none;
+    align-content: center;
+    justify-content: center;
+    border-radius: 1rem;
+  }
+
+  .profile img {
+    width: 100%;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    visibility: none;
+  }
+
+  .profile-desc-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    font-size: xx-large;
+  }
+
+  .profile-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .profile-content p {
+    display: inline;
+  }
+
+  .second-title p {
+    display: none;
+  }
+
+  .second-title {
+    font-size: xx-large;
+  }
+
+  .profile-content h1 {
+    display: flex;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    align-self: center;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .presentation {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    padding: 1rem;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 12%;
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-content h1 {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+
+  .profile-content h2 {
+    display: flex;
+    justify-self: center;
+    flex-flow: column;
+  }
+
+  .profile img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-desc-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 1%;
+  }
+
+  .profile-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    width: auto;
+    margin: 2%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-title {
+    font-size: 24px;
+  }
+
+  .profile-content p {
+    display: flex;
+    line-height: 2;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .presentation {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .profile {
+    padding: 1rem;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-desc-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .profile-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    width: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-title {
+    font-size: 24px;
+  }
+
+  .profile-content p {
+    display: flex;
+  }
+
+  .profile-content h1 {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 2%;
+    align-self: flex-start;
+  }
+}
