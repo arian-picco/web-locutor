@@ -13,13 +13,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3f6979;
-  background-image: url(backround10.jpeg);
-  background-size: 100%;
-  background-repeat: repeat;
+  background-color: transparent;
 }
 
-
+.background{
+  background-image: url(backround10.jpeg) ;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+}
 
 .flex-grid {
   background-color: rgb(0, 0, 0, 0.6);
@@ -98,6 +101,15 @@
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+  }
+
+  .background{
+    background-image: url(backround10.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: repeat;
+    opacity: .8,5;
   }
 
   .col {
